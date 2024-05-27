@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1 class="titulo">Cadastro de clientes</h1>
+    <div class="formulario">
+        <section class="inputs">
+          <h2 class="subtitulo">Digite as informações do cliente:</h2>
+            <section class="inputs_1">
+                <input class="input_1" type="text" id="nome_" placeholder="Nome do cliente">
+                <input class="input_2" type="text" id="cpf_" placeholder="CPF" maxlength="14">
+                <input class="input_3" type="text" id="telefone_"  placeholder="Telefone" maxlength="15">
+                <input class="input_4" type="email" id="email_" placeholder="E-mail"  autocomplete="email">
+                <input class="input_6" type="text" id="cep_"  placeholder="CEP" maxlength="8" minlength="8" >
+          </section>
+          <section class="inputs_2">
+            <input type="text" autocomplete="off" class="input_cep1" id="cidade_" placeholder="Cidade">
+            <input type="text" autocomplete="off" class="input_cep2" id="Uf_" placeholder="UF">
+            <input type="number" autocomplete="off" class="input_cep5" id="numero_" placeholder="Número">
+            <input type="text" autocomplete="off" class="input_cep3" id="bairro_" placeholder="Bairro">
+            <input type="text" autocomplete="off" class="input_cep4" id="logradouro_" placeholder="Logradouro">
+            
+          </section>
+          <button onclick="salvarLista()" class="botao-cadastrar">Cadastrar</button>
+        </section>
+    </div>
+    <div class="cadastro_clientes">
+        <h2 class="subtitulo2">Clientes cadastrados:</h2>
+        <section class="listas_">
+            <div class="lista_1a4">
+              <ul class="lista_1">
+                <li id="nome_cliente_1_li">
+                  <p id="nome_cilente1"></p>
+                </li>
+                <li id="cpf_cliente_1">
+                  <p id="cpf_cliente1"></p>
+                </li>
+                <li id="telefone_cliente_1">
+                  <p id="telefone_cliente1"></p>
+                </li>
+                <li id="email_cliente_1">
+                  <p id="email_cliente1"></p>
+                </li>
+                <li id="cep_cilente_1">
+                  <p id="cep_cilente1"></p>
+                </li>
+                <li id="uf_cliente_1">
+                  <p id="uf_cliente1"></p>
+                </li>
+                <li id="cidade_cliente_1">
+                  <p id="cidade_cliente1"></p>
+                </li>
+                <li id="bairro_cliente_1">
+                  <p id="bairro_cliente1"></p>
+                </li>
+                <li id="logradouro_cliente_1">
+                  <p id="logradouro_cliente1"></p>
+                </li>
+                <li id="numero_cliente_1">
+                  <p id="numero_cliente1"></p>
+                </li>
+              </ul>
+              <ul class="lista_2">
+                <li id="nome_cliente_2" >
+                  <p id="nome_cliente2"></p>
+                </li>
+                <li id="cpf_cliente_2">
+                  <p id="cpf_cliente2"></p>
+                </li>
+                <li id="telefone_cliente_2">
+                  <p id="telefone_cliente2"></p>
+                </li>
+                <li  id="email_cliente_2">
+                  <p id="email_cliente2"></p>
+                </li>
+                <li id="cep_cilente_2">
+                  <p id="cep_cilente2"></p>
+                </li>
+                <li id="uf_cliente_2">
+                  <p  id="uf_cliente2"></p>
+                </li>
+                <li id="cidade_cliente_2">
+                  <p id="cidade_cliente2"></p>
+                </li>
+                <li id="bairro_cliente_2">
+                  <p  id="bairro_cliente2"></p>
+                </li>
+                <li id="logradouro_cliente_2">
+                  <p id="logradouro_cliente2"></p>
+                </li>
+                <li id="numero_cliente_2">
+                  <p  id="numero_cliente2" ></p>
+                </li>
+              </ul>
+              <ul class="lista_3">
+                <li id="nome_cliente_3">
+                  <p id="nome_cliente3"></p>
+                </li>
+                <li id="cpf_cliente_3">
+                  <p  id="cpf_cliente3"></p>
+                </li>
+                <li id="telefone_cliente_3">
+                  <p  id="telefone_cliente3"></p>
+                </li>
+                <li  id="email_cliente_3">
+                  <p id="email_cliente3"></p>
+                </li>
+                <li id="cep_cilente_3">
+                  <p id="cep_cilente3"></p>
+                </li>
+                <li id="uf_cliente_3">
+                <p id="uf_cliente3"></p>
+                </li>
+                <li id="cidade_cliente_3">
+                  <p id="cidade_cliente3"></p>
+                </li>
+                <li id="bairro_cliente_3">
+                  <p id="bairro_cliente3"></p>
+                </li>
+                <li id="logradouro_cliente_3">
+                  <p id="logradouro_cliente3"></p>
+                </li>
+                <li id="numero_cliente_3">
+                  <p id="numero_cliente3"></p>
+                </li>
+              </ul>
+              <ul class="lista_4">
+                <li id="nome_cliente_4">
+                <p  id="nome_cliente4"></p>
+                </li>
+                <li id="cpf_cliente_4">
+                  <p  id="cpf_cliente4"></p>
+                </li>
+                <li id="telefone_cliente_4">
+                  <p id="telefone_cliente4"></p>
+                </li>
+                <li  id="email_cliente_4">
+                  <p id="email_cliente4"></p>
+                </li>
+                <li id="cep_cilente_4">
+                  <p id="cep_cilente4"></p>
+                </li>
+                <li id="uf_cliente_4">
+                  <p id="uf_cliente4"></p>
+                </li>
+                <li id="cidade_cliente_4">
+                  <p  id="cidade_cliente4"></p>
+                </li>
+                <li id="bairro_cliente_4">
+                  <p id="bairro_cliente4"></p>
+                </li>
+                <li id="logradouro_cliente_4">
+                  <p id="logradouro_cliente4"></p>
+                </li>
+                <li id="numero_cliente_4">
+                  <p id="numero_cliente4"></p>
+                </li>
+              </ul>
+            </div> 
+      </section>
+  </div>
+   
+    <script src="app.js"></script>
+</body>
+</html>
